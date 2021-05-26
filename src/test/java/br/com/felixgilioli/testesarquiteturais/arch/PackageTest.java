@@ -6,15 +6,11 @@ import javax.persistence.Entity;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tngtech.archunit.core.importer.ImportOption.DoNotIncludeTests;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 
-@AnalyzeClasses(
-        packages = "br.com.felixgilioli.testesarquiteturais",
-        importOptions = DoNotIncludeTests.class
-)
+@AnalyzeClasses(packages = "br.com.felixgilioli.testesarquiteturais")
 public class PackageTest {
 
     @ArchTest
